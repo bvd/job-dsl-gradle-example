@@ -1,4 +1,4 @@
-println ‘ex6’
+println 'e6'
 
 /*
 
