@@ -1,3 +1,6 @@
+println 'running example 8'
+/*
+
 String basePath = 'example8'
 String repo = 'sheehan/grails-example'
 
@@ -29,3 +32,4 @@ job("$basePath/grails-example-build") {
         }
     }
 }
+*/
