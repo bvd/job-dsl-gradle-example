@@ -5,6 +5,8 @@ folder(basePath) {
     description 'This example shows basic folder/job creation.'
 }
 
+println 'created folder example1'
+/*
 job("$basePath/grails-example-build") {
     scm {
         github repo
@@ -28,3 +30,4 @@ job("$basePath/grails-example-deploy") {
         shell 'scp war file; restart...'
     }
 }
+*/
