@@ -1,3 +1,6 @@
+println ‘e4’
+
+/*
 String basePath = 'example4'
 
 folder(basePath) {
@@ -29,3 +32,4 @@ folder(basePath) {
         }
     }
 }
+*/

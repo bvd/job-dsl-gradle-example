@@ -1,3 +1,6 @@
+println ‘e3’
+
+/*
 String basePath = 'example3'
 
 folder(basePath) {
@@ -24,3 +27,4 @@ job("$basePath/configure-block-example") {
         }
     }
 }
+*/

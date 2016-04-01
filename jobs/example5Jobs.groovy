@@ -1,3 +1,5 @@
+println ‘ex5’
+/*
 import com.dslexample.StepsUtil
 
 String basePath = 'example5'
@@ -28,4 +30,4 @@ job("$basePath/static-method-example2") {
         StepsUtil.proxiedGradle delegate, 'clean test'
     }
 }
-
+*/

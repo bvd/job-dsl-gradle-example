@@ -1,3 +1,7 @@
+println ‘e2’
+
+/*
+
 import groovy.json.JsonSlurper
 
 String basePath = 'example2'
@@ -36,3 +40,4 @@ branches.each { branch ->
         }
     }
 }
+*/

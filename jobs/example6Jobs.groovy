@@ -1,3 +1,7 @@
+println ‘ex6’
+
+/*
+
 String basePath = 'example6'
 
 folder(basePath) {
@@ -54,3 +58,4 @@ job("$basePath/resources-example-external") {
     }
 }
 
+*/
