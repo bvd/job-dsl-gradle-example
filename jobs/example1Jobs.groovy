@@ -1,14 +1,12 @@
 String basePath = 'example1'
 String repo = 'sheehan/grails-example'
 
-
 folder(basePath) {
     description 'This example shows basic folder/job creation.'
 }
 
-
 println 'created folder example1'
-/*
+
 job("$basePath/grails-example-build") {
     scm {
         github repo
@@ -24,6 +22,7 @@ job("$basePath/grails-example-build") {
     }
 }
 
+/*
 job("$basePath/grails-example-deploy") {
     parameters {
         stringParam 'host'
