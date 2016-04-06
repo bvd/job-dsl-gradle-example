@@ -5,12 +5,6 @@ folder(basePath) {
     description 'This example shows basic folder/job creation.'
 }
 
-def doSomething(){
-    println('------yaiks-------')
-}
-
-doSomething()
-
 println 'created folder example1'
 
 job("$basePath/grails-example-build") {
