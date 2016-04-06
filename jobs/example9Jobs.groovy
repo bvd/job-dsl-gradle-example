@@ -1,4 +1,5 @@
-import com.dslexample.debug.somethingElse
+
+import com.dslexample.CordovaJobBuilder
 
 println '>>>>> exec ex 9'
 
@@ -12,6 +13,6 @@ def doSomething(){
 
 doSomething()
 
-def myInstance = new somethingElse()
-
-myInstance.doSomethingElse()
+new CordovaJobBuilder(
+        name: "cordovaJobBuilderName"
+).build(this)

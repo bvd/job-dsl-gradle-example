@@ -1,5 +1,5 @@
 println 'example 7'
-/*
+
 import com.dslexample.GradleCiJobBuilder
 import com.dslexample.GrailsCiJobBuilder
 
@@ -30,4 +30,4 @@ new GradleCiJobBuilder(
     ownerAndProject: 'myorg/project3',
     tasks: 'clean test'
 ).build(this)
-*/
+
