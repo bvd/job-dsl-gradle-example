@@ -1,4 +1,4 @@
-import somethingElse
+import com.dslexample.debug.somethingElse
 
 println '>>>>> exec ex 9'
 
