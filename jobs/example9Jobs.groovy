@@ -1,4 +1,4 @@
-
+import somethingElse
 
 println '>>>>> exec ex 9'
 
@@ -12,4 +12,6 @@ def doSomething(){
 
 doSomething()
 
-doSomethingElse()
+def myInstance = new somethingElse()
+
+myInstance.doSomethingElse()
