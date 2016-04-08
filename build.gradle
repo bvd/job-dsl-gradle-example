@@ -49,3 +49,9 @@ task debugXml(dependsOn: 'classes', type: JavaExec) {
 task wrapper(type: Wrapper) {
     gradleVersion = '2.4'
 }
+
+task run(dependsOn: 'classes', type: JavaExec) {
+    main = 'javaposse.jobdsl.Run'
+    classpath sourceSets.main.runtimeClasspath
+    args 'jobs/trxJobs.groovy'
+}
