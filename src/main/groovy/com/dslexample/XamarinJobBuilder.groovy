@@ -28,7 +28,7 @@ class XamarinJobBuilder {
         }
 
         // Create subfolders for the different components in this project
-        //dslFactory.folder "${basePath}/App"
+        dslFactory.folder "${basePath}/App"
 
         /*
         dslFactory.job(name) {
