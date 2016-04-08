@@ -10,6 +10,7 @@ class XamarinJobBuilder {
 
     String gitUrl
     String projectName
+    ArrayList<LinkedHashMap<String, String>> environments
 
     void build(DslFactory dslFactory) {
 
@@ -29,6 +30,8 @@ class XamarinJobBuilder {
 
         // Create subfolders for the different components in this project
         dslFactory.folder "${basePath}/App"
+
+        println "environment count is ${environments.size()}"
 
         /*
         dslFactory.job(name) {
