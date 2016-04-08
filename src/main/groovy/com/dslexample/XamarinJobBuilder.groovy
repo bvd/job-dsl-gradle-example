@@ -14,12 +14,14 @@ class XamarinJobBuilder {
 
     void build(DslFactory dslFactory) {
 
-        println "git url is " + gitUrl
-        println "projectname is " + projectName
+        dslFactory.println "git url is " + gitUrl
+        dslFactory.println "projectname is " + projectName
 
         def basePath = "CCM${projectName.toUpperCase()}"
 
-        println "basepath is $basePath"
+        dslFactory.println "basepath is $basePath"
+
+
 
 
         // Create base folder for the project
@@ -31,7 +33,7 @@ class XamarinJobBuilder {
         // Create subfolders for the different components in this project
         dslFactory.folder "${basePath}/App"
 
-        println "environment count is ${environments.size()}"
+        dslFactory.println "environment count is ${environments.size()}"
 
         /*
         dslFactory.job(name) {
