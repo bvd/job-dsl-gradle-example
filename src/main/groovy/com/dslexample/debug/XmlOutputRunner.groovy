@@ -33,14 +33,21 @@ new FileNameFinder().getFileNames('.', pattern).each { String fileName ->
 println '\nWriting XML files:\n'
 
 def writeFile(File dir, String name, String xml) {
+
+    println "---------dir $dir"
+
     List tokens = name.split('/')
     File folderDir = dir
     tokens[0..<tokens.size() - 1].each { String token ->
         folderDir = new File(folderDir, token)
     }
+
+    println "---------folderdir $folderDir"
+
     folderDir.mkdirs()
 
-    File xmlFile = new File(folderDir, "${tokens[-1]}.xml")
+    //File xmlFile = new File(folderDir, "${tokens[-1]}.xml")
+    File xmlFile = new File(folderDir, "config.xml")
     xmlFile.text = xml
     println new File('.').toURI().relativize(xmlFile.toURI()).toString()
 }
